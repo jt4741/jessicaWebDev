@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Nav Bar</title>
+    <style type="text/CSS">
+      *{
+        margin:0;
+        padding:0;
+      }
+
+      body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+      }
+      
+      header{
+        background-color: azure;
+
+      }
+
+      nav{
+        background-color: antiquewhite;
+      }
+
+      ul{
+        /*remove all bullet pts*/ 
+        list-style-type: none;
+        overflow: hidden;
+        background-color: cornflowerblue;
+        /* Make the parent elements font size 0 when using inline block to get rid of tiny annoyinf space between letters*/
+        font-size: 0;
+
+      }
+
+      li{
+        /*li display block by default they dont want to share horizontal space*/
+        display: inline-block;
+        font-size: 1rem;
+\        
+      }
+
+      /* decendant selector == looking for both conditions// this pattern */
+      li a {
+        display: block;
+        text-align: center;
+        width: 100px;
+        padding: 10px;
+        text-decoration:none;
+        color: pink;
+      }
+
+      .li a.active{
+        background-color: aquamarine;
+      }
+
+      li a:hover{
+        background-color: rgba(0,0,0,1);
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li> <a href="#"> Link 1</a></li>
+          <li> <a class ="active" href="#"> Link 2</a></li>
+          <li> <a href="#"> Link 3</a></li>
+          <li> <a href="#"> Link 4</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
