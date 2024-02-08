@@ -1,0 +1,50 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    /*This is how we get a full size background image*/
+    background: url('ClassNotes/week03/3.2/Gallery/Gallery_Starter_Files/img/bg.jpg')no-repeat center center fixed;
+    background-size: cover;
+
+
+
+}
+body{
+    font-family: "Crimson Text", serif;
+
+}
+
+.container{
+    width: 900px;
+    margin:0 auto;
+    font-size: 0;
+
+}
+
+.poloroid{
+    width: 260px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+}
+.poloroid img{
+    width: 100%;
+    height: auto;
+    border: 10px solid #ccc;
+    border-bottom-width: 45px;
+
+}
+
+.poloroid p{
+    position:absolute;
+    text-align: center;
+    width: 280px;
+    color: #888;
+    font-size: 14px;
+}
