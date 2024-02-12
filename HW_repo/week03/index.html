@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Recipe Card HTML Semantics, Homework 2</title>
+    <style>
+    
+    header{
+        margin-left: 50%;
+    }
+  
+    header ul {
+        /* this inline is imporant! */
+        display: inline;
+        margin: 0;
+        padding: 15px 0px 17px 5px;
+        list-style-type: none;
+        box-shadow: 0, 0, 5px rgba(0, 0, 0, 0.15);
+      }
+      header ul li {
+        font: bold 12px/18px sans-serif;
+        display: inline-block;
+        position: relative;
+        padding: 15px 20px;
+        background: #fff;
+        cursor: pointer;
+        
+        transition: all 0.9s;
+      }
+
+      header ul li:hover {
+        background-color:red;
+        color: #fff;
+      }
+
+      header ul li ul {
+        padding: 0;
+        position: fixed;
+        top: 48px;
+        right: 0;
+        width: 150px;
+        box-shadow: none;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.9s;
+      }
+
+      header ul li ul li {
+        background: #555;
+        display: block;
+        color: #fff;
+        text-shadow: 0 -1px 0 #000;
+      }
+
+      header ul li ul li:hover {
+        background: #666;
+      }
+
+      header ul li:hover ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+
+        .side-bar ul {
+        /* this inline is imporant! */
+        display: inline;
+        margin: 0;
+        padding: 15px 0px 17px 5px;
+        list-style-type: none;
+        box-shadow: 0, 0, 5px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        
+      }
+      .side-bar ul li {
+        font: bold 12px/18px sans-serif;
+        background-color: palegoldenrod;
+        position: relative;
+        padding: 15px 20px;
+        background: #fff;
+        cursor: pointer;
+        
+        transition: all 0.9s;
+      }
+
+      .side-bar ul li:hover {
+        background-color:red;
+        color: #fff;
+        background-color: palegoldenrod;
+      }
+
+      
+
+      .side-bar ul li ul li {
+        background: #555;
+        background-color: palegoldenrod;
+        display: block;
+        color: #fff;
+        text-shadow: 0 -1px 0 #000;
+      }
+
+
+      .side-bar ul li:hover ul {
+        display: block;
+        background-color: palegoldenrod;
+        opacity: 1;
+        visibility: visible;
+      }
+      .side-bar{
+        
+        height: 100%;
+        position: fixed;
+        list-style-type: none;
+        margin: 0%;
+        
+        background-color: palegoldenrod;
+        
+      }
+        .side-bar ul li {
+        
+        padding: 15px;
+        background-color: palegoldenrod;
+        margin: 0;
+      }
+
+      main{
+        
+      }
+     
+   
+      
+      .main-recipe-section{
+        position: absolute;
+        margin-left:175px;
+        border-style: solid;
+        margin-right: 30%;
+        padding:10px;
+        align-items: center;
+        background-color: aliceblue;
+      }
+
+      .inside-main-ingredients{
+        width: 200px;
+        height: 70%;
+        padding: 10px;
+        position: absolute;
+        border-style: solid;
+        text-align: center;
+        
+      }
+      .all-the-details{
+        align-items: center;
+        margin-left: 240px;
+        
+        
+        padding: 10px;
+      }
+
+   
+     
+
+
+
+  
+
+      
+    </style>
+
+</head>
+<header> 
+    <nav>
+        <ul>
+            <li><a href="#">My Favorite Recipes</a></li>
+            <li><a href="#">All Recipes</a></li>
+            <li><a href="#">About Me</a></li>
+        </ul>
+        <input type="text" placeholder="Search.." style="margin-right: 50px;">
+     </nav>
+     
+</header>
+<body>
+    <div class = "wrapper">
+    <aside class="side-bar">
+        <nav>
+            <ul style="list-style-type: none;">
+                <li><a href="#">Popular Dupes</a></li>
+                <li><a href="#">Cooking Supplies</a></li>
+                <li><a href="#">Dietary Restrictions</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Originals</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </nav>
+    </aside>
+    </div>
+    
+    <main>
+        <div class="center-section">
+        <section>
+            <div class="main-recipe-section">
+                <h1 style="text-align: center;">Levain like Chocolate Chip Cookie Recipe</h1>
+
+                <div class = "inside-main-ingredients">
+                    <section style="background-color: aliceblue;">
+                        <h3 style="text-align: center;">Ingredients</h3>
+                        <ul>
+                            <li> 1 cup Cold Butter cut into small cubes </li>
+                            <li> 1 cup Brown Sugar </li> 
+                            <li> 1/2 cup Sugar </li>
+                            <li> 2 Eggs </li>
+                            <li> 1 1/2 cups Cake Flour* </li>
+                            <li> 1 teaspoon Cornstarch </li>
+                            <li> 3/4 teaspoon Baking Soda </li>
+                            <li> 3/4 teaspoon Salt </li>
+                            <li> 2  cups Chocolate Chips </li>
+                            <li> 2 cups Walnuts roughly chopped </li>
+                        </ul>
+                    </section>
+                </div>
+                <section>
+                <div class="all-the-details">
+                    <article style="text-align: center;">Baked in NYC and beloved worldwide, our crispy and chewy and soft and melty cookies have become iconic for a reason — and they're a perfect holiday gift. We make each 6-ounce cookie by hand every day, with simple ingredients and a whole lotta love — the same way we've done since 1995.</article>
+                    <figure style="align-content: center;">
+                        <img
+                            src = "https://www.modernhoney.com/wp-content/uploads/2015/12/Levain-Bakery-Chocolate-Chip-Copycat-Cookie-Recipe-3.jpg"
+                            alt = "Levain Chocolate Chip Cookie Image"
+                            width = "500px" 
+                             
+                        />
+                    </figure>
+                    <figcaption style="text-align: center;"> <a href = 'https://www.modernhoney.com/levain-bakery-chocolate-chip-crush-cookies/'> Click Here for the Original Levain Recipe</a></figcaption>
+                    <div class ="directions">
+                    <section>
+                        <ol>
+                            <li> Preheat oven to 410 degrees. </li>
+                            <li> In a large mixing bowl, cream together cold cubed butter, brown sugar, and sugar for 4 minutes or until creamy. </li>
+                            <li> Add eggs, one at a time, mixing well after each one. </li>
+                            <li> Stir in flours, cornstarch, baking soda, and salt. Mix until just combined to avoid overmixing. Stir in chocolate chips and walnuts. </li>
+                            <li> Separate dough into large balls and place on lightly colored cookie sheet. They are bigger than you think! You will fit 4 cookies on one large cookie sheet. The dough makes 8 extra large cookies. </li>
+                            <li> Bake for 9-12 minutes or until golden brown on the top. Let them rest for at least 10 minutes to set. </li>
+                        </ol>
+                    </section>
+                    </div>
+                </div>
+                </section>
+            </section>
+            </div>
+        </div>
+        </div>
+    </main>
+    </div>
+</body>
+<footer></footer>
+</html>
