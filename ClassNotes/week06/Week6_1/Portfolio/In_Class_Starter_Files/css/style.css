@@ -96,12 +96,8 @@ button:hover,
     transition: all 1s ease ease-in-out;
 
 }
-.mask h2{
-    margin: 0;
-}
-.mask p{
-    font-style: italic;
-}
+
+
 .thumb:hover .mask{
     opacity: 1;
 }
