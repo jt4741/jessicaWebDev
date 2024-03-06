@@ -4,11 +4,20 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        
         {
             "type": "chrome",
             "request": "launch",
             "name": "Open blog.html",
-            "file": "/Users/jessicatonthat/Desktop/jessicaWebDev/Midterm-Project/index.html"
+            "file": "/Users/jessicatonthat/Desktop/jessicaWebDev/Midterm-Project-copy/index.html"
         }
     ]
 }

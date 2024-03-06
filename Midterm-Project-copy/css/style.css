@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0%;
+  display: block;
+}
+niagra-thin{
+  font-family: "niagara", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+niagra-regular{
+  font-family: "niagara", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{ 
+  background-color:#FF5733 ;
+}
+
+.question{
+  padding: 1rem;
+  font-family: "niagara", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 150px;
+  color: antiquewhite;
+  line-height: .75;
+}
+
+.nav-bar {
+  margin:1rem;
+  padding: 0; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  outline:solid white;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: antiquewhite;
+}
+
+
+ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 15px 16px;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+ul li a:hover {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 15px 16px;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.photo-preview{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding:1;
+  margin:1;
+}
+
+.grid{
+  
+  width:15rem;
+  height:auto;
+  
+}
+
+.photo-preview{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ 
+
+ 
+}
+.grid{
+  background-color: antiquewhite;
+  width: auto;
+  height: 10rem;
+  padding: 1rem;
+}
+.title-section{
+  background-image: url(/Users/jessicatonthat/Desktop/jessicaWebDev/Midterm-Project-copy/img/main-back.jpeg);
+  background-size: cover;
+  overflow: scroll;
+  margin-top: 3rem;
+}
+.who-i-am{
+  padding: 10rem;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FF5733;
+}
+
+.bio{
+  text-align: center;
+  font-family: "niagara", serif;
+  font-weight: 200;
+  font-size: 50px;
+  font-style: normal;
+  color:antiquewhite;
+}

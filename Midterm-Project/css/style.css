@@ -20,8 +20,29 @@
     font-style: normal;
   }
 
+.stolzl-thin{
+  font-family: "stolzl", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.stolzl-light{
+  font-family: "stolzl", sans-serif;
+  font-weight: 200;
+  font-style: normal;}
+
+.stolzl-regular{
+  font-family: "stolzl", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+.Stolzl-Bold{
+  font-family: "stolzl", sans-serif;
+  font-weight: 700;
+  font-style: normal;}
+
 body{
-    background-image: url("/Users/jessicatonthat/Desktop/jessicaWebDev/Midterm-Project/img/main-back.jpeg");
+    background-color:#edcd44;
     background-size: cover; /* Resize the background image to cover the entire container*/
 
 }
@@ -29,7 +50,7 @@ body{
 
 
 .main-section-home{
-    background-color: 	#E6E6FA;
+    background-color: 	#81cad6;
     position: fixed;
     height: 90%;
     width: 90%;
@@ -56,7 +77,7 @@ ul {
   
   li a {
     display: block;
-    color: black;
+    color: #dc3e26;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -64,11 +85,11 @@ ul {
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    color: red;
+    color: white;
   }
 
   li a:active{
-    color: blue
+    color: #dc3e26;
   }
 
 .text-section{
@@ -76,7 +97,7 @@ ul {
 }
 h2{
     text-align: center;
-    color: blue;
+    color: #dc3e26;
     font-size: 400%;
   
 }
@@ -119,7 +140,7 @@ h2{
 }
 .main-article{
   font-size: 10px;
-  padding:0rem 3.5rem ;
+  padding:1rem ;
   text-align: left;
   
   
@@ -232,4 +253,8 @@ input[type=submit]:hover {
 .newsletter-form{
   margin:2rem;
   padding:3rem;
+}
+
+h3{
+  text-align: center;
 }
