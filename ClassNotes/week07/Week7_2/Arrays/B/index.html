@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intro to Arrays</title>
+    <style type="text/css">
+      #content{
+        color:red;
+
+      }
+
+      @media screen and (max-width:767px){
+        #content{
+          color:blue;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <button onclick="addSingleP()">ADD A SINGLE PARAGRAPH USING STRINGS</button>
+    <!--DOM: -->
+    <button onclick="addMultiP()">ADD MULTIPLE PARAGRAPHS THE RIGHT WAY USING DOM NODES</button>
+
+    <div id="content">
+      <p>This is some dummy text that will be overwritten by inner HTML</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+      //declare our content var globally 
+      var content 
+      //this will work globallt because the scrript tag is after the bodys content
+      content = document.getElementById('content')
+      //console.log(content)
+      function addSingleP() {
+        content.innerHTML = 
+        '<p class="bad"> This is poorly written P </p>'
+
+      }
+
+      function addMultiP(num){
+        for(var i=0;i<num;i++){
+        //create a p element node 
+        var p = document.createElement('P') // <p></p>
+        // create a texxt node to go inside our p node 
+        var text = document.createTextNode(
+          'this is paragraph' i+1 'created w nodes'
+        )
+        p.appendChild('text')
+        //append the text t p
+        content.appendChild(p)
+         } 
+      }
+    </script>
+  </body>
+</html>
