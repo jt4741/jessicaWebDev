@@ -5,7 +5,7 @@
   cursor: url('../img/path-to-img.png'), auto;
 }
 body{
-  background-color:#EDE9D0;
+  background-color:#FF5733;
  
 }
 
@@ -25,7 +25,7 @@ p{
   font-weight: 1000;
   font-style:normal;
   font-size: 20px;
-  color:#006A96;
+  color:antiquewhite;
   text-transform: uppercase;
   text-align: justify;
   
@@ -37,7 +37,7 @@ p{
   font-weight: 800;
   font-style: normal;
   font-size: 150px;
-  color: #FF5733;
+  color: antiquewhite;
   line-height: 0.75;
   text-decoration: none;
   
@@ -54,7 +54,7 @@ p{
   text-decoration: none;}
 .main-section-home{
   padding-bottom: 2rem;
-  border-bottom: #FF5733 solid;
+  border-bottom: antiquewhite solid;
 }
 
 .nav-bar {
@@ -119,7 +119,7 @@ ul li a:hover {
   margin-left: 0;
   margin-right: 0;
   padding-bottom: 3rem;
-  border-bottom: #FF5733 solid;
+  border-bottom: antiquewhite solid;
 }
 .main-page-photos{
   width: 20rem;
@@ -130,19 +130,24 @@ ul li a:hover {
 }
 .main-page-photos:hover{
   transform: scale(1.1);
-
 }
+#xoxo{
+  
+  -webkit-text-stroke: 2px antiquewhite;
+  
+}
+
 #main-bottom{
-  border-top: #FF5733 solid;
+  border-top: antiquewhite solid;
   padding: 0;
   display: flex;
   flex-direction: row;
   margin: 0;
-  border-bottom: #FF5733 solid;
+  border-bottom: antiquewhite solid;
 }
 
 #left-side{
-  border-right: #FF5733 solid;
+  border-right: antiquewhite solid;
 
   
 }
@@ -177,7 +182,7 @@ ul li a:hover {
 .main-portfolio-body{
   display: flex;
   flex-direction: row;
-  border-bottom: #FF5733 solid;
+  border-bottom: antiquewhite solid;
 
 }
 
@@ -186,7 +191,7 @@ ul li a:hover {
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-left: #FF5733 solid;
+  border-left: antiquewhite solid;
   justify-content: center;
 }
 #portfolio-left{
@@ -271,7 +276,7 @@ button:active {
   padding: 1rem;
   text-transform: uppercase;
   text-align: justify;
-  border-bottom:#FF5733 solid;
+  border-bottom:antiquewhite solid;
 }
 .center-img{
   padding-bottom: 2rem;
@@ -280,8 +285,16 @@ button:active {
   
   
 }
+.orange-back{
+  background-color: #FF5733;
+}
+#long-description1{
+  color: antiquewhite;
+} 
+  
 .long-description{
-  margin-top:#FF5733 solid;
+  margin-top:  antiquewhite solid;
+ 
 }
 .photo{
   align-items: center;
@@ -292,7 +305,7 @@ button:active {
 }
 
 #full-body{
-  border-bottom:#FF5733 solid;
+  border-bottom:antiquewhite solid;
 }
 #body-blog-page{
   display: flex;
@@ -307,7 +320,7 @@ button:active {
 }
 .main-blog{
   padding:2rem;
-  border-bottom: #FF5733 solid;
+  border-bottom: antiquewhite solid;
 }
 .main-blog-photo{
   width:100%;
@@ -322,41 +335,70 @@ button:active {
 .text-box{
   height:30rem;
   overflow: scroll;
+  scrollbar-color:antiquewhite;
   text-align: justify;
 }
 #jessica{
-  border-bottom: #FF5733 solid;
+  border-bottom: antiquewhite solid;
   padding: 5px;
   
 }
  #under-jessica{
   padding:3rem;
-  border-bottom: #FF5733 solid;
+  border-bottom: antiquewhite solid;
  }
 
 .main-contact-page{
-  border-bottom: #FF5733 solid;
+  border-bottom: antiquewhite solid;
 }
 #concept{
   padding: 2rem;
 }
 #long-description{
   text-align: center;
-  border-top: #FF5733 solid;
+  border-top: antiquewhite solid;
 }
 
 #name-title{
   display: flex;
   flex-direction: row;
-  border-bottom: #FF5733 solid;
+  border-bottom: antiquewhite solid;
 }
 #left{
-  border-right: #FF5733 solid;
+  border-right: antiquewhite solid;
 }
 #right{
   background-image: image(../img/boat.PNG);
 }
 
+/*TOOL TIP TUTORIAL*/
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+
+  color: antiquewhite;
+
+  text-transform: uppercase;
+  font-family: "niagara", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 150px;
+  text-align: center;
+  
+  
+  padding: 1rem;
+  
+  /* Position the tooltip */
+  width:120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 @media only screen and (max-width: 768px) {
   p{
     font-size: 15px;
@@ -401,7 +443,7 @@ button:active {
   #quick-intro-1{
     
     padding-bottom: 3rem;
-    border-bottom: #FF5733 solid;
+    border-bottom: antiquewhite solid;
   }
   #three-photos{
     justify-content: center;
