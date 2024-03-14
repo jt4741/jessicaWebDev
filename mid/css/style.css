@@ -244,13 +244,16 @@ button {
   border-radius: 25px;
   border: 1px solid;
   padding:1px;
+
   font-family: "trade-gothic-next", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 20px;
+
   color:#006A96;
   text-transform: uppercase;
   font-weight: bold;
+
   background:  
     radial-gradient(circle, #0000 1%, var(--c) 1%) 50%/0%
     var(--c);
@@ -335,8 +338,23 @@ button:active {
 .text-box{
   height:30rem;
   overflow: scroll;
-  scrollbar-color:antiquewhite;
+  
   text-align: justify;
+}
+
+.text-box::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.text-box::-webkit-scrollbar-track {
+  background:transparent ;        /* color of the tracking area */
+}
+.text-box::-webkit-scrollbar-thumb {
+  background-color: #006A96;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid antiquewhite;  /* creates padding around scroll thumb */
+}
+.text-box::-webkit-scrollbar-corner {
+  background: transparent;
 }
 #jessica{
   border-bottom: antiquewhite solid;
