@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shuffle</title>
+    <script type="text/javascript">
+      let students= ['cindy','albert','mike','jess','olivia','matt','paul','joshua','flora','maddie','hunter','julie','john','damion']
+
+      function listStudents(){
+        // grab our content div and store it as a variable 
+        let content = document.getElementById('content')
+        // create an ordered list node to store our students 
+        let ol = document.createElement('OL')
+        //add it to our content div 
+        content.appendChild(ol)
+        console.log(content)
+
+        //loop through our student array 
+
+        for (var i = 0 ; i < students.length ; i++){
+          //create a list item 
+          let li = document.createElement('LI')
+          // grab the student names at index i 
+          let stu = students[i]
+          //pass the name into a text node we create
+          var text = document.createTextNode(stu)
+          // add the text node to the li we created 
+          li.appendChild(text)
+          // add list item to ol 
+          ol.appendChild(li)
+        }
+
+        
+
+      }
+      
+
+      // sort an array alphabetically 
+      function sortStudents(){
+        students.sort()
+        console.log(students)
+      }
+
+      //shuffle
+      function shuffleStudents(){
+        for ( var i = 0; i<students.length ; i++){
+        
+        // get random # between 0 and array length 
+        let randomIndex = Math.floor(Math.random()*(i+1))
+        //place rhe item at the random index ina  variable
+        let itemAtIndex = students[randomIndex]
+        //swap the random item and the item at slot i 
+        students[randomIndex] = students[i]
+        //set random index to value of the item at i 
+        students[i] = itemAtIndex
+        // set the value of i to the item at random index
+        console.log(students)
+
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+    <button onclick="listStudents()">List Students</button>
+    <button onclick="sortStudents()"> Sort </button>
+    <button onclick="shuffleStudents()"> Shuffle Students </button>
+
+    <div id = "content">
+      <!--Spit out answers here -->
+    </div>
+  </body>
+</html>

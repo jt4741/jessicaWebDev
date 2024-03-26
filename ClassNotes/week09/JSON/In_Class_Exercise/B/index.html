@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSON</title>
+    <script>
+      let counter = 0 
+      function intervalTest(){
+        let p = document.getElementById('timeElapsed')
+        p.innerHTML = counter
+        counter+=5 
+
+      }
+
+      //calll a function directly on the browser intercal and how often we want it to fire 
+      window.setInterval(intervalTest,300)
+    </script>
+  </head>
+  <body>
+    <p id="timeElapsed">
+      this will go away once function over rides N INTERVAL 
+    </p>
+  </body>
+</html>

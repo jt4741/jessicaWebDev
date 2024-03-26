@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Input Simple</title>
+    <style>
+      h1{
+        text-transform: uppercase;
+      }
+
+
+      .red{
+        color: red;
+      }
+      .green{
+        color:green;
+      }
+      .blue{
+        color: blue;
+
+      }
+      .purple{
+        color: blueviolet;
+      }
+
+    </style>
+
+    <script>
+      // a function that chanfes the color of h1 based on what # they pick 
+
+      // first thing we need is an event listener to make sure the dom content is loaded 
+      document.addEventListener('DOMContentLoaded', function(){
+        let myBtn = document.getElementById('changeBtn')
+        console.log(myBtn.classList)
+
+        // now that dom is loaded we cna add event listeners
+
+        function colorChange(){
+          let n = parseInt(useerN.value)
+          console.log(typeof n)
+
+          // grab our h1 so we can change it in our switch statement 
+          var h = document.getElementById('changeBtn')
+          // switch statements 
+          switch(n){
+            case 0: 
+              h.className='red'
+              break
+            case=1:
+              h.className ='green'
+              break
+            case =2:
+              h.className ='blue'
+              break
+            case =3:
+              h.className='purple'
+              break
+            default: 
+              break
+          }
+
+        }
+        myBtn.addEventListener('click',colorChange(){
+          let userN = document.getElementById('num')
+          console.log(typeof userN)
+        })
+
+        myBtn.addEventListener('click',function(){
+          let userN = document.getElementById('num')
+          console.log(typeof userN)
+
+          let n = parseInt(useerN.value)
+          console.log(typeof n)
+
+          // grab our h1 so we can change it in our switch statement 
+          var h = document.getElementById('changeBtn')
+          // switch statements 
+          switch(n){
+            case 0: 
+              h.className='red'
+              break
+            case=1:
+              h.className ='green'
+              break
+            case =2:
+              h.className ='blue'
+              break
+            case =3:
+              h.className='purple'
+              break
+            default: 
+              break
+          }
+        })
+
+
+
+      })
+    </script>
+  </head>
+  <body>
+    <h1 id="changeMe"> Get User Input</h1>
+    <form>
+      <fieldset>
+        <legend> Pick a number between 0 and 3</legend>
+        <!--Input tha tonly accepts numbers between 0 and 3 in incraments of 1 (whole numbers)-->
+        <input type ="number" name = "num" id = "num" min="0" max="3" step="1"/>
+        <button type="button" id="changeBtn" class="btnClass"> Click to change the color class of H1</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
