@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.typekit.net/whi2dmu.css">
+
+    <title>Greeting</title>
+    <style type="text/css">
+        p{
+            font-family: "prestige-elite-std", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        /* trick from before flexbox align items center */
+        line-height: 40px;
+        margin-top: 5%;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      .well {
+        border-radius: 10px;
+        background-color: 	#feff9c;
+        min-height: 100px;
+        padding: 20px;
+      }
+
+      .container button {
+        width: 100%;
+        padding: 10px 0;
+        cursor: pointer;
+        margin: 10px 0;
+        color: white;
+        background-color: palevioletred;
+        transition: background-color 1s ease;
+        border: 1px white;
+      }
+
+      .container button:hover {
+        background-color: red;
+      }
+
+      input[type='number'] {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 24px;
+      }
+    h1{
+        text-align: center;
+    }
+      
+    </style>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function () {
+        // add event listeners
+        // declare and assign HTML elements to js variables
+        document.getElementById('calcBtn').addEventListener('click', sayHello)
+      })
+      document.addEventListener('DOMContentLoaded', function () {
+        // add event listeners
+        // declare and assign HTML elements to js variables
+        document.getElementById('calcBtn').addEventListener('click', happyBirthday)
+      })
+
+      function sayHello(event) {
+        // stop the page from refreshing/reloading when we click submit inside the form
+        event.preventDefault()
+        // grab our outpit div so that we can display the output to the user
+        let result = document.getElementById('greetingResult')
+        // clear it out
+        result.innerHTML = ''
+        // grab the value from our bill input
+        let name = document.getElementById('name').value
+        // remeber input values, even if they are numbers come in a strings
+        
+
+        let arrName = document.getElementsByName('name')
+        console.log(arrName)
+        // loop through all of the inputs in our NodeList
+        // and find the radio input with the checked attribute = true
+       
+
+       
+
+        // spit out our bill and information using createElement and createTextNode
+
+       
+        let p1 = document.createElement('P')
+        
+
+        // text nodes with the info we need to display and append
+        let t1 = document.createTextNode('hiiiii ' + name + '!!!! it has been so long since i wanted to make this website && I am so glad i finally get to share it with you. feel free to hang out here as long as you would like, you can always come back too!!!! -jessica')
+        
+
+        // add the text nodes to the p tags
+        p1.appendChild(t1)
+      
+        // append the p tags to our output div
+        result.appendChild(p1)
+        
+      }
+     
+      function happyBirthday(month, date) {
+        // stop the page from refreshing/reloading when we click submit inside the form
+        event.preventDefault()
+        // grab our outpit div so that we can display the output to the user
+        let Birthresult = document.getElementById('birthdayResult')
+        // clear it out
+        Birthresult.innerHTML = ''
+        // grab the value from our bill input
+        let monthDate = document.getElementById('month').value
+        // remeber input values, even if they are numbers come in a strings
+        let arrMonth = document.getElementsByName('month')
+        console.log(arrMonth)
+
+        let arrDay = document.getElementsByName('day')
+        console.log(arrMonth)
+
+        let dayDate = document.getElementById('day').value
+        // remeber input values, even if they are numbers come in a strings
+        if (monthDate == 1&& dayDate >= 20 || monthDate == 2 && dayDate <= 18){result = ("Aquarius");}
+        if (monthDate == 2&& dayDate >= 19 || monthDate == 3&& dayDate <= 20){result = ("Pisces");}
+        if (monthDate == 3&& dayDate >= 21 || monthDate == 4 && dayDate <= 19){result = ("Aries");}
+        if (monthDate == 4&& dayDate >= 20|| monthDate == 5 && dayDate <= 20){result = ("Taurus");}
+        if (monthDate == 5&& dayDate >= 21 || monthDate == 6 && dayDate <= 20){ result = ("Gemini");}
+        if (monthDate == 6&& dayDate >= 21 || monthDate == 7&& dayDate <= 22){result = ("Cancer");}
+        if (monthDate == 7&& dayDate >= 23 || monthDate == 8 && dayDate <= 22){result = ("Leo");}
+        if (monthDate == 8 && dayDate >= 23 || monthDate == 9 && dayDate <= 22){ result = ("Virgo");}
+        if (monthDate == 9&& dayDate >= 23 || monthDate == 10&& dayDate <= 22){result = ("Libra");}
+        if (monthDate == 10 && dayDate >= 23|| monthDate == 11 && dayDate <= 21){result = ("Scorpio");}
+        if (monthDate == 11 && dayDate >= 22 || monthDate == 12 && dayDate <= 21){result = ("Sagittarius");}
+        if (monthDate == 12 && dayDate >= 22 || monthDate == 1 && dayDate <= 19){result = ("Capricorn");}
+    /// 
+
+        let p2 = document.createElement('P')
+        
+        // text nodes with the info we need to display and append
+        let t2 = document.createTextNode(' WOAH!!! your zodiac sign is '+ result +'!<3 i am a gemni!!!')
+        
+
+        // add the text nodes to the p tags
+        p2.appendChild(t2)
+      
+        // append the p tags to our output div
+        Birthresult.appendChild(p2)
+      }
+   
+     
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>hi</h1>
+      <form>
+        <label for="nameEntry"> what is your name? </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+        />
+        <br />
+      
+        <label for="birthdayEntry"> && when is your birthday ?!! </label>
+        
+        <select name=”month” id="month">
+            <option value=x>Select Birth Month</option>
+            <option value=1>January</option><option value=2>February</option><option value=3>March</option>
+            <option value=4>April</option><option value=5>May</option><option value=6>June</option>
+            <option value=7>July</option><option value=8>August</option><option value=9>September</option>
+            <option value=10>October</option><option value=11>November</option>
+            <option value=12>December</option></select>
+            
+            <select class="form-select" id="day" name="day">
+                <option value="">day</option>
+                <option value=01>01</option>
+                <option value=02>02</option>
+                <option value=03>03</option>
+                <option value=04>04</option>
+                <option value=05>05</option>
+                <option value=06>06</option>
+                <option value=07>07</option>
+                <option value=08>08</option>
+                <option value=09>09</option>
+                <option value=10>10</option>
+                <option value=11>11</option>
+                <option value=12>12</option>
+                <option value=13>13</option>
+                <option value=14>14</option>
+                <option value=15>15</option>
+                <option value=16>16</option>
+                <option value=17>17</option>
+                <option value=18>18</option>
+                <option value=19>19</option>
+                <option value=20>20</option>
+                <option value=21>21</option>
+                <option value=22>22</option>
+                <option value=23>23</option>
+                <option value=24>24</option>
+                <option value=25>25</option>
+                <option value=26>26</option>
+                <option value=27>27</option>
+                <option value=28>28</option>
+                <option value=29>29</option>
+                <option value=30>30</option>
+                <option value=31>31</option>
+            </select>
+        
+        <button type="submit" id="calcBtn"> nice 2 meet u</button>
+      </form>
+
+      <!-- output from tip calculator script prints here -->
+      <div class="well">
+        <div  id="greetingResult"></div>
+        <div id="birthdayResult"></div>
+      </div>
+      
+    </div>
+  </body>
+</html>

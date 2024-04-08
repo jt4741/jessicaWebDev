@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS Objects and JSON</title>
+    <script type="text/javascript">
+      // initialize a new object and store it as a variable named customer
+      const customer = {
+        name: 'Anthony',
+        age: 23,
+        married: false,
+        pets: ['dog', 'cat', 'iguana'],
+        siblings: [
+          {name: 'Mary', age: 32, married: true},
+          {name: 'Billy', age: 16, married: false},
+        ]
+      }
+
+      const customerJSON = JSON.stringify(customer)
+      console.log(customerJSON)
+
+      const customerObject = JSON.parse(customerJSON)
+      console.log(customerObject)
+
+      //console.log(customer.name)
+      //reasign value for name
+      //customer.name = 'Anthony'
+      //console.log(customer.name)
+      //customer.eyeColor = ['green','blue','brown']
+      
+      //customer.pets.push('chicken')
+
+      //customer.siblings[0].pets = ['spider','snail']
+
+      //console.log(customer.pets.length)
+  
+      //console.log(customer)
+
+
+
+//we are going to hit our first endpt 
+      function logApiResults(){
+        // we need to flag this function as asynchronous, if we are flagging anything with await within
+
+        const response = await fetch('https://rickandmortyapi.com/api/character/45')
+        // if we didn’t await response, response would be null/undefined here and there would be no JSON to parse
+        const result = await response.json()
+        // here we are simply logging the result, but we could call out any of the properties
+        console.log(result)
+      }
+    const myApiData= logApiResults()
+    const message =  ` ${myApiData.name} is a ${myApiData.species} from ${myApiData.orgin.name} and he is ${myApiData.status}`
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

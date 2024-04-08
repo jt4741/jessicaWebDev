@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS Objects and JSON</title>
+    <script type="text/javascript">
+      
+      function logApiResults(){
+        // we need to flag this function as asynchronous, if we are flagging anything with await within
+
+        const response = await fetch('https://api.quotable.io/quotes/random')
+        // if we didn’t await response, response would be null/undefined here and there would be no JSON to parse
+        const result = await response.json()
+        // here we are simply logging the result, but we could call out any of the properties
+        console.log(result)
+      }
+    const myApiData= logApiResults()l
+    const message =  ` ${myApiData.content} is a quote by ${myApiData.author}`
+
+    function logApiResults_fakeusers(){
+        // we need to flag this function as asynchronous, if we are flagging anything with await within
+
+        const response = await fetch('https://randomuser.me/api/')
+        // if we didn’t await response, response would be null/undefined here and there would be no JSON to parse
+        const result = await response.json()
+        // here we are simply logging the result, but we could call out any of the properties
+        console.log(result)
+      }
+      const myApiData_fakeusers= logApiResults_fakeusers()
+      const message =  ` ${myApiData_fakeusers.reults.name} is the user, whose username is ${myApiData.results.login.username} who lives on ${myApiData_fakeusers.results.location.street} `
+
+
+
+      function randNumRange(min, max) {
+        //here we have to add a few math expressions to make sure our range starts at the min number
+        var rn = Math.round(Math.random() * (max - min) + min);
+        console.log(rn);
+        //by retuning the value of RN in the function we can use this random generated number anywhere we call it. we can assign it to a variable in the future
+        return rn;
+        };
+
+        
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
