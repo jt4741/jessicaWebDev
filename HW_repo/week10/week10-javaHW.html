@@ -63,9 +63,8 @@
         // declare and assign HTML elements to js variables
         document.getElementById('calcBtn').addEventListener('click', sayHello)
       })
+
       document.addEventListener('DOMContentLoaded', function () {
-        // add event listeners
-        // declare and assign HTML elements to js variables
         document.getElementById('calcBtn').addEventListener('click', happyBirthday)
       })
 
@@ -76,33 +75,18 @@
         let result = document.getElementById('greetingResult')
         // clear it out
         result.innerHTML = ''
-        // grab the value from our bill input
+        // grab the value from our name input
         let name = document.getElementById('name').value
-        // remeber input values, even if they are numbers come in a strings
-        
-
         let arrName = document.getElementsByName('name')
         console.log(arrName)
-        // loop through all of the inputs in our NodeList
-        // and find the radio input with the checked attribute = true
        
-
-       
-
-        // spit out our bill and information using createElement and createTextNode
-
        
         let p1 = document.createElement('P')
-        
-
         // text nodes with the info we need to display and append
         let t1 = document.createTextNode('hiiiii ' + name + '!!!! it has been so long since i wanted to make this website && I am so glad i finally get to share it with you. feel free to hang out here as long as you would like, you can always come back too!!!! -jessica')
-        
-
         // add the text nodes to the p tags
         p1.appendChild(t1)
-      
-        // append the p tags to our output div
+      // append the p tags to our output div
         result.appendChild(p1)
         
       }
@@ -114,17 +98,20 @@
         let Birthresult = document.getElementById('birthdayResult')
         // clear it out
         Birthresult.innerHTML = ''
-        // grab the value from our bill input
+        // grab the birth month
+
+
         let monthDate = document.getElementById('month').value
-        // remeber input values, even if they are numbers come in a strings
-        let arrMonth = document.getElementsByName('month')
-        console.log(arrMonth)
 
-        let arrDay = document.getElementsByName('day')
-        console.log(arrMonth)
+       
 
+      
+        // grab the day they were born 
         let dayDate = document.getElementById('day').value
-        // remeber input values, even if they are numbers come in a strings
+
+
+
+        //horoscope logic
         if (monthDate == 1&& dayDate >= 20 || monthDate == 2 && dayDate <= 18){result = ("Aquarius");}
         if (monthDate == 2&& dayDate >= 19 || monthDate == 3&& dayDate <= 20){result = ("Pisces");}
         if (monthDate == 3&& dayDate >= 21 || monthDate == 4 && dayDate <= 19){result = ("Aries");}
@@ -140,20 +127,16 @@
     /// 
 
         let p2 = document.createElement('P')
-        
         // text nodes with the info we need to display and append
         let t2 = document.createTextNode(' WOAH!!! your zodiac sign is '+ result +'!<3 i am a gemni!!!')
-        
-
         // add the text nodes to the p tags
         p2.appendChild(t2)
       
         // append the p tags to our output div
         Birthresult.appendChild(p2)
       }
-   
-     
     </script>
+
   </head>
   <body>
     <div class="container">
