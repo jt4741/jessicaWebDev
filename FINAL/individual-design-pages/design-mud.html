@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/jdy0ohn.css">
+    </head>
+    <body>
+    <!-- nav bar-->
+    <div id="nav-bar">
+      <ul> 
+        <li><a id="home" href="../main/home.html">home</a></li>
+          <li><a id="braindump" href="../dump/index.html">brain dump</a></li>
+          <li><a id="about-link" href="../about/about.html">what is this?</a></li>
+          <li><a id="designdisplay-link" href="../design-display/design-display.html"> some design</a></li>
+          
+      </ul>
+    </div>
+  <!--END nav bar-->
+
+    <!--page aside from the nav bar -->
+     <!-- title of page -->
+    <h1> drink a cup of coffee </h1>
+    <div class="container-flex-row-2">
+       <!-- description of project -- section on left-->
+      <h3 class="display-image-text">I lived outside this coffeeshop, “MUD” when I first moved to NYC. It holds so man memories and challenges and struggles. It was simply one of the most beautiful times. I grew up so much in this tiny apartment and because of that it will be one of my most important places in New York. I juxtaposed it with the graffiti that says “I fell for myself this time,” which for me perfectly encapsulates me coming to New York for myself and on my own. It represents for me in a way the start of me learning self love and self resilience. 
+      </h3>
+      <!-- photo side -->
+      <li><a href="../design-display/design-display.html"><img class= "display-image"src="../img/1x/ARTBOARD 1.PNG"> </a></li>
+    </div>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script type="text/javascript">
+      const h1 = document.getElementsByTagName('h2')
+      gsap.from(h1, 2, {
+          x:100,
+          scale:1.1,
+          delay: 0.6,
+          ease: 'bounce.out',
+        })
+      const bounce = document.getElementsByClassName('bounce')
+      gsap.from(bounce, 2, {
+          x:-100,
+          scale:1.1,
+          delay: 0.6,
+          ease: 'bounce.out',
+        })
+        const img = document.getElementsByTagName('img')
+        gsap.from(img, 2, {
+            x:-100,
+            scale:1.1,
+            delay: 0.5,
+            ease: 'bounce.out',
+          })
+          const title = document.getElementsByTagName('h1')
+            gsap.from(title, 2, {
+                x:-900,
+                scale:1.1,
+                delay: 0.2,
+                ease: 'elastic.out',
+              })
+    </script>
+
+    </body>
+</html>

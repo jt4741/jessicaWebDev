@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dey7pae.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jdy0ohn.css">
+
+    </head>
+    <body>
+     <!-- nav bar-->
+     <div id="nav-bar">
+        <ul> 
+            <li><a id="home" href="../main/home.html">HOME</a></li>
+            <li><a id="braindump" href="../dump/index.html">brain dump</a></li>
+            <li><a id="about-link" href="../about/about.html">what is this?</a></li>
+            <li><a id="designdisplay-link" href="../design-display/design-display.html"> some design</a></li>
+            <div id="clock">
+            
+              <!-- Clock text will appear here -->
+            </div>
+        </ul>
+    </div>
+    <!--END nav bar-->
+
+    <!--main page aside from the nav bar -->
+    <!-- title of page -->
+    <h2> Design Lab Collection </h2>
+    <div id="main-display">
+    <!-- description of project -- section on left-->
+        <div id="decription-of-project-general">
+            <!--Title of left side of page-->
+            <h1> Reflection</h1>
+            <!--  Actual Paragraph Description -->
+            <h3 class="description-block"> In class I was tasked with creating a project completely free of boundaries or rubrics, so I thought it would be most fitting to share it with you here on this website. These are a collection of 9 prints, all created with Adobe Suite. They represent my experiences and revelations as I have moved to New York City and how it has symbolically changed my life. Despite being presented as a collection, all of these prints are designed to stand alone, they were not designed to aesthetically belong together, but belong together via hidden meanings, motifs, and above all the theme of growing and learning in New York City. There are many hidden clues and meanings and I challenge you to draw connections and try your best to decipher the art and the meaning. I hold this project and NYC very close to my heart and am honored to share this with you. Enjoy, or don’t. </h3>
+        </div>
+        
+        <div id="main-photo-design-square">
+            <!-- Challenge Yourself -- PHOTO& LINK -->
+            <li> <a href="../individual-design-pages/design-challengeyourself.html"><img class= "design-display-img"src="../img/challenge-yourself.png"> </a></li>
+     <!---------->
+
+            <!-- Good Night -- PHOTO& LINK -->
+            <li> <a href="../individual-design-pages/design-nitelife.html"><img class= "design-display-img"src="../img/good-night.png"> </a></li>
+    <!---------->
+
+            <!-- Samba Ad -- PHOTO& LINK -->
+            <li> <a href="../individual-design-pages/design-samba.html"><img class= "design-display-img"src="../img/notyourbrothers.png "> </a></li>
+    <!---------->
+
+            <!-- Name Tag -- PHOTO& LINK -->
+            <li> <a href="../individual-design-pages/design-myname.html"><img class= "design-display-img"src="../img/hellomyname.svg"> </a></li>
+    <!---------->
+            
+             <!-- Subway/Going Places -- PHOTO& LINK -->
+            <li> <a href="../individual-design-pages/design-goingplaces.html"><img class= "design-display-img"src="../img/going-places.png"> </a></li>
+    <!---------->
+
+             <!-- Reciept -- PHOTO& LINK -->
+            <li> <a href="../individual-design-pages/design-reciept.html"><img class= "design-display-img"src="../img/nyu-reciept.png"> </a></li>
+    <!---------->
+
+            <!-- Challenge Yourself -- PHOTO& LINK -->
+            <li> <a href="../individual-design-pages/design-mud.html"><img class= "design-display-img"src="../img/1x/ARTBOARD 1.PNG">  </a></li>
+    <!---------->
+
+             <!-- MUD -- PHOTO& LINK -->
+            <li> <a href="../individual-design-pages/design-haveme.html"><img class= "design-display-img"src="../img/i-have-me.png">  </a></li>
+    <!---------->
+
+             <!-- Soccer/Tate -- PHOTO& LINK -->
+            <li> <a href="../individual-design-pages/design-footy.html"><img class= "design-display-img"src="../img/tate.svg"> </a></li>
+    <!---------->
+        <!-- END main square for grid of photos-->
+        </div>
+    </div>
+    <script>
+      /* Function to update the clock*/
+      function updateClock() {
+        var now = new Date(); // current date
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        var strTime = hours + ':' + minutes + ':' + seconds;
+        document.getElementById("clock").innerHTML = strTime;
+      }
+      
+      setInterval(updateClock, 1000); // Setting timer to update clock every second
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script type="text/javascript">
+      const h1 = document.getElementsByTagName('h2')
+      gsap.from(h1, 2, {
+          x:100,
+          scale:1.1,
+          delay: 0.6,
+          ease: 'bounce.out',
+        })
+      const bounce = document.getElementsByClassName('bounce')
+      gsap.from(bounce, 2, {
+          x:-100,
+          scale:1.1,
+          delay: 0.6,
+          ease: 'bounce.out',
+        })
+        const img = document.getElementsByTagName('img')
+        gsap.from(img, 2, {
+            x:-100,
+            scale:1.1,
+            delay: 0.5,
+            ease: 'bounce.out',
+          })
+          const title = document.getElementsByTagName('h1')
+            gsap.from(title, 2, {
+                x:-900,
+                scale:1.1,
+                delay: 0.2,
+                ease: 'elastic.out',
+              })
+        const para = document.getElementsByTagName('h3')
+            gsap.from(para, 2, {
+                x:-900,
+                scale:1.1,
+                delay: 0.2,
+                ease: 'elastic.out',
+              })
+              const nav = document.getElementsByTagName('a')
+              gsap.from(nav, 2, {
+                x:-900,
+                scale:1.1,
+                delay: 0.2,
+                ease: 'elastic.out',
+              })
+    </script>
+    
+
+    </body>
+</html>

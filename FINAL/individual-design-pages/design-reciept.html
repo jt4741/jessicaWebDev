@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/jdy0ohn.css">
+    </head>
+    <body>
+    <!-- nav bar-->
+    <div id="nav-bar">
+      <ul> 
+        <li><a id="home" href="../main/home.html">home</a></li>
+          <li><a id="braindump" href="../dump/index.html">brain dump</a></li>
+          <li><a id="about-link" href="../about/about.html">what is this?</a></li>
+          <li><a id="designdisplay-link" href="../design-display/design-display.html"> some design</a></li>
+          
+      </ul>
+    </div>
+  <!--END nav bar-->
+
+    <!--page aside from the nav bar -->
+    <!-- title of page -->
+    <h1> How much $$$$$$ </h1>
+    <div class="container-flex-row-2">
+       <!-- description of project -- section on left-->
+      <h3 class="display-image-text">I wanted to create an ode to all the reasons why I came to NYU and the city. But all the reasons that made me come here are not the same reasons that have made me stay. So I felt like th best way to show that was through a mock up of a receipt. I priced all of the “products” at $0 because to me they are priceless. However, they all add up to a great deal of money. This represents the wealth of love, knowledge and passion I have from the city. I also felt it would e fitting to use a receipts as NYC is one of the most expensive  cities in the world and for some they find it ridiculous but there is a part of me that understands the value of it. 
+      </h3>
+       <!-- photo side -->
+      <li><a href="../design-display/design-display.html"><img class="display-image"src="../img/nyu-reciept.png"></a></li>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script type="text/javascript">
+      const h1 = document.getElementsByTagName('h2')
+      gsap.from(h1, 2, {
+          x:100,
+          scale:1.1,
+          delay: 0.6,
+          ease: 'bounce.out',
+        })
+      const bounce = document.getElementsByClassName('bounce')
+      gsap.from(bounce, 2, {
+          x:-100,
+          scale:1.1,
+          delay: 0.6,
+          ease: 'bounce.out',
+        })
+        const img = document.getElementsByTagName('img')
+        gsap.from(img, 2, {
+            x:-100,
+            scale:1.1,
+            delay: 0.5,
+            ease: 'bounce.out',
+          })
+          const title = document.getElementsByTagName('h1')
+            gsap.from(title, 2, {
+                x:-900,
+                scale:1.1,
+                delay: 0.2,
+                ease: 'elastic.out',
+              })
+    </script>
+  
+
+    </body>
+</html>
+

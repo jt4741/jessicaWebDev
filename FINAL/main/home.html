@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/jdy0ohn.css">
+  
+  <style>
+    @import url("https://use.typekit.net/jdy0ohn.css");
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body>
+  <!-- nav bar -->
+  <div id="nav-bar">
+    <ul> 
+      <li><a id="braindump" href="home.html">home</a></li>
+      <li><a id="braindump" href="../dump/index.html">brain dump</a></li>
+      <li><a id="about-link" href="../about/about.html">what is this?</a></li>
+      <li><a id="designdisplay-link" href="../design-display/design-display.html"> some design</a></li>
+      <div id="clock">
+          
+        <!-- Clock text will appear here -->
+      </div>
+    </ul>
+
+  </div>
+  <!-- END nav bar -->
+  <div>
+    <!-- main page aside from the nav bar -->
+    <div class="start">
+      <h2> Jessica Tonthat</h2> 
+      <h1 id="title">&ensp; this website, is for </h1>
+      <h1> me not you.</h1>
+      <div class="container-flex-row">
+        <img class="home-pic" src="../img/me-roof.JPG">
+        <img class="home-pic-small" src="../img/jesschild.png">
+        
+        
+        <h3 class="text-blurb">Hi! Welcome to my site! This really has been a long time coming. I am so happy you could join me here and see my vision really come to life. This is a space where I share my interests, some of my work, and overall just a home for all the ideas in my head to live. Thanks for giving it some attention and your help in creating this space. Hang around here as long as you would like, you can always come back here too. With so much love and respect, jessica xoxo </h3>
+      </div>
+      <h1> WELCOME</h1>
+      
+      <h1 class="bounce">2 my world !</h1>
+
+        
+      
+     
+
+      
+    </div>
+    <div class="next">
+      <h1 class="text-in-next">Jessica .    Tonthat</h1>
+      <div class="container-flex-row" id="second-half">
+        <img class="fit" src="../img/scullypic.JPG">
+        <img class="home-pic" src="../img/mirrorlaguna.JPG"> 
+        <img class="home-pic" src="../img/hunter-roof.jpg"> 
+      </div>
+      <h1 class="text-in-next">stretch yourself</h1> 
+      
+    </div>
+  </div>
+  <!-- Clock at the bottom -->
+  
+  
+  <script>
+    /* Function to update the clock*/
+    function updateClock() {
+      var now = new Date(); // current date
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+      var strTime = hours + ':' + minutes + ':' + seconds;
+      document.getElementById("clock").innerHTML = strTime;
+    }
+    
+    setInterval(updateClock, 1000); // Setting timer to update clock every second
+  </script>
+  
+  <script>
+    const h1 = document.getElementsByTagName('h2')
+    gsap.from(h1, 2, {
+      x:100,
+      scale:1.1,
+      delay: 0.6,
+      ease: 'bounce.out',
+    })
+    const bounce = document.getElementsByClassName('bounce')
+    gsap.from(bounce, 2, {
+      x:-100,
+      scale:1.1,
+      delay: 0.6,
+      ease: 'bounce.out',
+    })
+    const img = document.getElementsByTagName('img')
+    gsap.from(img, 2, {
+      x:-100,
+      scale:1.1,
+      delay: 0.5,
+      ease: 'bounce.out',
+    })
+    const title = document.getElementsByTagName('h1')
+    gsap.from(title, 2, {
+      x:-900,
+      scale:1.1,
+      delay: 0.2,
+      ease: 'elastic.out',
+    })
+    const para = document.getElementsByTagName('h3')
+    gsap.from(para, 2, {
+      x:-900,
+      scale:1.1,
+      delay: 0.2,
+      ease: 'elastic.out',
+    })
+    const nav = document.getElementsByTagName('a')
+    gsap.from(nav, 2, {
+      x:-900,
+      scale:1.1,
+      delay: 0.1,
+      ease: 'elastic.out',
+    })
+  </script>
+</body>
+</html>
+

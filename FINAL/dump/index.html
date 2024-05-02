@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dey7pae.css">
+    
+    <link rel="stylesheet" href="https://use.typekit.net/jdy0ohn.css">
+    <link rel="javascript" href="../java/javascript.js">
+
+    </head>
+    <body>
+    <div class ="main-section-home">
+     <!-- nav bar-->
+     <div id="nav-bar">
+      <ul> 
+        <li><a id="braindump" href="../main/home.html">home</a></li>
+        <li><a id="braindump" href="index.html">brain dump</a></li>
+        <li><a id="about-link" href="../about/about.html">what is this?</a></li>
+        <li><a id="designdisplay-link" href="../design-display/design-display.html"> some design</a></li>
+        <div id="clock">
+            
+          <!-- Clock text will appear here -->
+        </div>
+      </ul>
+  
+    </div>
+    <!--END nav bar-->
+
+    <!--page aside from the nav bar -->
+    <!--Title-->
+    <h1>current things i like n pics i luv</h1>
+    <!--page below title -->
+    <div class="main">
+        <!--First row of content-->
+        <div class="container-flex-row">
+            <img class="brain-dump-img" src="../img/classicu 2022-09-02 121607.526.JPG">
+            <img class="brain-dump-img" src="../img/jesschild.png">
+            <img class="brain-dump-img" src="../img/sushimake.JPG">
+            <img class="brain-dump-img" src="../img/wwyd.jpg">
+            <img class="brain-dump-img" src="../img/laguna.JPG">
+        </div>
+
+        <!--2nd row of content-->
+        <div class="container-flex-row">
+            <img class="brain-dump-img" src="../img/CALLING.JPG">
+            <img class="brain-dump-img" src="../img/hunter-roof.JPG">
+            <img class="brain-dump-img" src="../img/stayorgrowth.jpg">
+            <img class="brain-dump-img" src="../img/Tezza-1474.JPG">
+            <img class="brain-dump-img" src="../img/formal-selfie.JPG">
+            <img class="brain-dump-img" src="../img/moneykiss.jpg">
+        </div>
+    </div>
+    <script>
+      /* Function to update the clock*/
+      function updateClock() {
+        var now = new Date(); // current date
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        var strTime = hours + ':' + minutes + ':' + seconds;
+        document.getElementById("clock").innerHTML = strTime;
+      }
+      
+      setInterval(updateClock, 1000); // Setting timer to update clock every second
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script type="text/javascript">
+    const h1 = document.getElementsByTagName('h2')
+    gsap.from(h1, 2, {
+        x:100,
+        scale:1.1,
+        delay: 0.6,
+        ease: 'bounce.out',
+      })
+    const bounce = document.getElementsByClassName('bounce')
+    gsap.from(bounce, 2, {
+        x:-100,
+        scale:1.1,
+        delay: 0.6,
+        ease: 'bounce.out',
+      })
+      const img = document.getElementsByTagName('img')
+      gsap.from(img, 2, {
+          x:-100,
+          scale:1.1,
+          delay: 0.5,
+          ease: 'bounce.out',
+        })
+        const title = document.getElementsByTagName('h1')
+          gsap.from(title, 2, {
+              x:-900,
+              scale:1.1,
+              delay: 0.2,
+              ease: 'elastic.out',
+            })
+        const para = document.getElementsByTagName('h3')
+            gsap.from(para, 2, {
+                x:-900,
+                scale:1.1,
+                delay: 0.2,
+                ease: 'elastic.out',
+              })
+              const nav = document.getElementsByTagName('a')
+            gsap.from(nav, 2, {
+                x:-900,
+                scale:1.1,
+                delay: 0.2,
+                ease: 'elastic.out',
+              })
+  </script>
+    
+
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/jdy0ohn.css">
+    </head>
+    <body>
+    <!-- nav bar-->
+    <div id="nav-bar">
+      <ul> 
+        <li><a id="home" href="../main/home.html">home</a></li>
+          <li><a id="braindump" href="../dump/index.html">brain dump</a></li>
+          <li><a id="about-link" href="../about/about.html">what is this?</a></li>
+          <li><a id="designdisplay-link" href="../design-display/design-display.html"> some design</a></li>
+          
+      </ul>
+    </div>
+  <!--END nav bar-->
+
+    <!--page aside from the nav bar -->
+    <!-- title of page -->
+    <h1> what is your name?</h1>
+    <div class="container-flex-row-2">
+      <!-- description of project -- section on left-->
+      <h3 class="display-image-text">I may argue that the best thing in New York City is that no one cares who you are. If you look at NYC from a numbers perspective it is the largest most densely populated city in the United States. Everyone here is so enthralled with themselves, their interests, they are so passionate and so driven. It is this culture that is dependent on originality. It is so unique and so beautiful. I love this because I used to care about what people thought about me in highschool. I was so hyper fixated on being perceived that I feel like I lost sight of my self in so many ways. The culture that exists here in New York allowed me to take back the part of my life that cared what others think, because here, truly nobody gives a fuck. 
+      </h3>
+      <!-- photo side -->
+      <li><a href="../design-display/design-display.html"><img class="display-image"src="../img/hellomyname.svg"></a></li>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script type="text/javascript">
+      const h1 = document.getElementsByTagName('h2')
+      gsap.from(h1, 2, {
+          x:100,
+          scale:1.1,
+          delay: 0.6,
+          ease: 'bounce.out',
+        })
+      const bounce = document.getElementsByClassName('bounce')
+      gsap.from(bounce, 2, {
+          x:-100,
+          scale:1.1,
+          delay: 0.6,
+          ease: 'bounce.out',
+        })
+        const img = document.getElementsByTagName('img')
+        gsap.from(img, 2, {
+            x:-100,
+            scale:1.1,
+            delay: 0.5,
+            ease: 'bounce.out',
+          })
+          const title = document.getElementsByTagName('h1')
+            gsap.from(title, 2, {
+                x:-900,
+                scale:1.1,
+                delay: 0.2,
+                ease: 'elastic.out',
+              })
+    </script>
+
+    </body>
+</html>
