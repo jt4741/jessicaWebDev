@@ -14,18 +14,25 @@
     <div class ="main-section-home">
      <!-- nav bar-->
      <div id="nav-bar">
-      <ul> 
-        <li><a id="braindump" href="../main/home.html">home</a></li>
-        <li><a id="braindump" href="index.html">brain dump</a></li>
-        <li><a id="about-link" href="../about/about.html">what is this?</a></li>
-        <li><a id="designdisplay-link" href="../design-display/design-display.html"> some design</a></li>
-        <div id="clock">
+      <div class="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="../main/home.html">home</a></li>
+          <li><a href="../dump/index.html">brain dump</a></li>
+          <li><a href="../about/about.html">what is this?</a></li>
+          <li><a href="../design-display/design-display.html">some design</a></li>
+          <div id="clock">
             
-          <!-- Clock text will appear here -->
-        </div>
-      </ul>
-  
+            <!-- Clock text will appear here -->
+          </div>
+        </ul>
+      </nav>
     </div>
+    
     <!--END nav bar-->
 
     <!--page aside from the nav bar -->
@@ -34,22 +41,54 @@
     <!--page below title -->
     <div class="main">
         <!--First row of content-->
-        <div class="container-flex-row">
+       
+        <div class="container-flex-row-dump">
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/classicu 2022-09-02 121607.526.JPG">
+            <p>me and my friend tate</p>
+          </div>
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/jesschild.png">
+            <p>silly baby me</p>
+          </div>
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/sushimake.JPG">
+            <p>sushi night in! </p>
+          </div>
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/wwyd.jpg">
+            <p>my mantra.</p>
+          </div>
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/laguna.JPG">
-        </div>
-
-        <!--2nd row of content-->
-        <div class="container-flex-row">
+            <p>west coast jess</p>
+          </div>
+          
+       
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/CALLING.JPG">
+            <p>heartbreak core</p>
+          </div>
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/hunter-roof.JPG">
+            <p>my bff and i! on a roof</p>
+          </div>
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/stayorgrowth.jpg">
+            <p>mantra pt.2</p>
+          </div>
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/Tezza-1474.JPG">
+            <p>i want summer rn</p>
+          </div>
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/formal-selfie.JPG">
+            <p>me b4 formal</p>
+          </div>
+          <div class="polaroid">
             <img class="brain-dump-img" src="../img/moneykiss.jpg">
+            <p>married to te $$$</p>
+          </div>
         </div>
     </div>
     <script>
@@ -111,6 +150,15 @@
                 delay: 0.2,
                 ease: 'elastic.out',
               })
+  </script>
+
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
   </script>
     
 

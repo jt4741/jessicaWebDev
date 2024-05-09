@@ -12,21 +12,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 </head>
 <body>
-  <!-- nav bar -->
+  <!-- nav bar-->
   <div id="nav-bar">
-    <ul> 
-      <li><a id="braindump" href="home.html">home</a></li>
-      <li><a id="braindump" href="../dump/index.html">brain dump</a></li>
-      <li><a id="about-link" href="../about/about.html">what is this?</a></li>
-      <li><a id="designdisplay-link" href="../design-display/design-display.html"> some design</a></li>
-      <div id="clock">
-          
-        <!-- Clock text will appear here -->
-      </div>
-    </ul>
-
+    
+    <div class="hamburger-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="home.html">home</a></li>
+        <li><a href="../dump/index.html">brain dump</a></li>
+        <li><a href="../about/about.html">what is this?</a></li>
+        <li><a href="../design-display/design-display.html">some design</a></li>
+        <div id="clock">
+            
+          <!-- Clock text will appear here -->
+        </div>
+        <div id="clock">
+            
+          <!-- Clock text will appear here -->
+        </div>
+      </ul>
+      
+    </nav>
   </div>
-  <!-- END nav bar -->
+  
   <div>
     <!-- main page aside from the nav bar -->
     <div class="start">
@@ -61,7 +74,17 @@
       
     </div>
   </div>
+ 
   <!-- Clock at the bottom -->
+
+  <div class="music-player">
+    <h1>a song i luv</h1>
+    
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/232006248&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/andersonpaak" title="anderson .paak" target="_blank" style="color: #cccccc; text-decoration: none;">anderson .paak</a> · <a href="https://soundcloud.com/andersonpaak/the-season-carry-me" title="The Season / Carry Me - Anderson .Paak prod. 9th Wonder &amp; Callum Connor" target="_blank" style="color: #cccccc; text-decoration: none;">The Season / Carry Me - Anderson .Paak prod. 9th Wonder &amp; Callum Connor</a></div>
+      
+    
+    <p>send me your favorite song --- on the what's this page?</p>
+  </div>
   
   
   <script>
@@ -123,6 +146,14 @@
       delay: 0.1,
       ease: 'elastic.out',
     })
+  </script>
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
   </script>
 </body>
 </html>

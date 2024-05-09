@@ -9,13 +9,23 @@
     <body>
     <!-- nav bar-->
     <div id="nav-bar">
-      <ul> 
-        <li><a id="home" href="../main/home.html">home</a></li>
-          <li><a id="braindump" href="../dump/index.html">brain dump</a></li>
-          <li><a id="about-link" href="../about/about.html">what is this?</a></li>
-          <li><a id="designdisplay-link" href="../design-display/design-display.html"> some design</a></li>
-          
-      </ul>
+      <div class="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="../main/home.html">home</a></li>
+          <li><a href="../dump/index.html">brain dump</a></li>
+          <li><a href="../about/about.html">what is this?</a></li>
+          <li><a href="../design-display/design-display.html">some design</a></li>
+          <div id="clock">
+            
+            <!-- Clock text will appear here -->
+          </div>
+        </ul>
+      </nav>
     </div>
   <!--END nav bar-->
 
@@ -63,6 +73,14 @@
                 delay: 0.2,
                 ease: 'elastic.out',
               })
+    </script>
+    <script>
+      const hamburgerMenu = document.querySelector('.hamburger-menu');
+      const navLinks = document.querySelector('.nav-links');
+  
+      hamburgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
     </script>
     </body>
 </html>

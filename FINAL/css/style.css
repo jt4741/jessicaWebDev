@@ -36,7 +36,7 @@ h2{
  color: black;
  font-size: 70px;
 }
-h3{
+h3,label{
   
   font-family: "quinn-display", serif;
   font-weight: 300;
@@ -102,9 +102,39 @@ ul li a:hover {
   color: hotpink;
   
 }
+
+/*--------------------------------------*/
+.nav-links ul li a:hover {
+  color: hotpink;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+.nav-links.show ul {
+  display: flex;
+  flex-direction: column;
+  
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
 /* IMAGES */
 img:hover{
-  zoom:1.1;
+  zoom:1.05;
 }
 
 
@@ -187,7 +217,84 @@ img:hover{
   transition: 1ms;
   transition: ease;
   }
+/*feedback */
+.below{
+  margin-top: 7rem;
+  background-color: black;
+}
+.feedback-form {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: palevioletred;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+}
+
+/*music listen to */
+.music-player {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.music-player h2 {
+  margin-bottom: 20px;
+}
+
+audio {
+  width: 100%;
+  margin-bottom: 20px;
+}
 /*Dump*/
+.container-flex-row-dump{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.polaroid {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  padding: 10px;
+  margin: 8px;
+}
 .brain-dump-img{
   max-width: 20rem;
   padding: 5px;
@@ -351,6 +458,7 @@ img:hover{
   .fit{
     max-height: 10rem;
   }
+  
   /*About Page*/
   #small-pic-about{
     padding-top: 3rem;
@@ -379,7 +487,7 @@ img:hover{
   .design-display-img{
     width: 10rem;
     height:10rem;
-    padding-bottom: 2rem;
+    padding-bottom: .5rem;
   }
   #main-photo-design-square{
     padding-top:3rem;
@@ -582,6 +690,14 @@ img:hover{
 }
 #about-scribble{
   width: 40%;
+}
+/*nav*/
+.nav-links ul {
+  display: none;
+}
+
+.hamburger-menu {
+  display: block;
 }
   /*dump*/
   .container-flex-row{
